@@ -140,7 +140,7 @@ namespace kan_slänga
                     break;
 
                 case "2":
-                    Console.WriteLine("You took the right pill and the pain going away. You have also reached the checkpoint. Press enter to continue");
+                    Console.WriteLine("You took the right pillaidulasd and the pain going away. You have also reached the checkpoint. Press enter to continue");
                     Console.ReadLine();
                     rum5();
                     break;
