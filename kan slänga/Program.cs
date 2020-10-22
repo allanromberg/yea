@@ -136,7 +136,8 @@ namespace kan_slänga
             switch (pill)
             {
                 case "1":
-                    Console.WriteLine("You took the wrong pill and you feel the pain in your body before everything going dark.");
+                  
+
                     break;
 
                 case "2":
