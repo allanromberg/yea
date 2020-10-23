@@ -4,41 +4,30 @@ using System.Runtime.InteropServices.ComTypes;
 namespace kan_slänga
 {
     class Program
-
     {
         static int checkpoint = 0;
-
         static void rum0()
         {
             Console.WriteLine(" The door is locked! See if one of your three keys will open it.");
             Console.Write("Enter a number (1-3): ");
-
-
             string keyChoice = Console.ReadLine();
 
             //Respone to the preferred key choice
             switch (keyChoice)
             {
-
                 case "1":
                     Console.WriteLine("It is a big room with two big corridors. Press enter to continue. ");
                     Console.ReadLine();
                     Console.Clear();
                     rum1();
-
                     break;
-
-
                 case "2":
                     Console.Clear();
                     Console.WriteLine(" You choose the second key. The door doesn't open.\n TRY ANOTHER KEY");
-
                     break;
-
                 case "3":
                     Console.Clear();
                     Console.WriteLine(" You choose the second key. The door doesn't open.\n TRY ANOTHER KEY");
-
                     break;
             }
         }
@@ -48,20 +37,17 @@ namespace kan_slänga
             string whichhall = Console.ReadLine();
             switch (whichhall)
             {
-
                 case "1":
                     Console.Clear();
                     Console.WriteLine("You walked in to the right corridor but its 5 different doors. Press enter to   continue");
                     Console.ReadLine();
                     rum2();
                     break;
-
                 case "2":
                     Console.Clear();
                     Console.WriteLine("You walked to the wrong corridors and you step in a trap. Try again.");
                     break;
             }
-
         }
 
         static void rum2()
@@ -75,17 +61,17 @@ namespace kan_slänga
                     Console.Clear();
                     Console.WriteLine("Wrong door! Try again.");
                     break;
-
+               
                 case "2":
                     Console.Clear();
                     Console.WriteLine("Wrong door! Try again.");
                     break;
-
+               
                 case "3":
                     Console.Clear();
                     Console.WriteLine("Wrong door! Try again.");
                     break;
-
+             
                 case "4":
                     Console.Clear();
                     Console.WriteLine("Right door! Press enter to continue.");
@@ -101,30 +87,20 @@ namespace kan_slänga
         }
         static void rum3()
         {
-            Console.WriteLine("when you come in to the room behind the door you see a bomb. Its going to explode. You need to type down the code so the bomb dont blow yu up");
+            Console.WriteLine("when you come in to the room behind the door you see a bomb. Its going to explode. You need to type down the code so the bomb dont blow you up");
             Console.WriteLine("the code is 4344939493");
             string lösenord = "";
             string rättlösenord = "4344939493";
             lösenord = Console.ReadLine();
             if (lösenord == rättlösenord)
             {
-
                 Console.WriteLine("You typed in the right password. Click enter to continue.");
                 Console.ReadLine();
                 rum4();
-
             }
-
             else if (lösenord != rättlösenord)
             {
-                Console.WriteLine("You typed in the wrong code.");
-
-                {
-
-                }
-
-
-
+                Console.WriteLine("You typed in the wrong code.");     
             }
         }
         static void rum4()
@@ -135,15 +111,10 @@ namespace kan_slänga
             string pill = Console.ReadLine();
             switch (pill)
             {
-                case "1":
-                   
+                case "1":            
                     Console.WriteLine("You took the wrong pill and you feel the pain in your body before everything going dark.");
-
-
                     break;
-
-                case "2":
-                   
+                case "2":             
                     Console.WriteLine("You took the right pill and the pain going away. You have also reached the checkpoint. Press enter to continue");
                     Console.ReadLine();
                     rum5();
@@ -155,11 +126,9 @@ namespace kan_slänga
             checkpoint = 5;
             Console.Clear();
             Console.WriteLine("");
-
-
-
         }
-        static void rum_1() { 
+        static void rum_1() 
+        { 
             Console.Write("Type OPEN or KNOCK: ");
             string doorChoice = Console.ReadLine();
             string capDoor = doorChoice.ToUpper();
@@ -168,12 +137,10 @@ namespace kan_slänga
             if (capDoor == "OPEN")
             {
                 rum0();
-
             }
             else if (capDoor == "KNOCK")
             {
                 Console.WriteLine(" No one answer");
-
             }
         }
         static void Main(string[] args)
@@ -190,14 +157,7 @@ namespace kan_slänga
                         rum5();
                         break;
                 }
-
-                    
-
                 }
-
-
-
-
             }
         }
     }
